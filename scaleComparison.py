@@ -16,7 +16,7 @@ comparison = np.zeros((scale, scale*2), dtype=np.uint8)
 dogfx = scale/dog.shape[0]
 dogfy = scale/dog.shape[1]
 
-#scale the images
+#Scale the images
 dogInterp = cv2.resize(dog, (0, 0), fx=dogfx, fy=dogfy, interpolation=cv2.INTER_AREA)
 dogResize = cv2.resize(dog, (scale, scale))
 
